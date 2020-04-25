@@ -6,9 +6,10 @@ import PackageDescription
 let package = Package(
     name: "StackView",
     platforms: [
-        .iOS(SupportedPlatform.IOSVersion.v10)
+        .iOS(SupportedPlatform.IOSVersion.v10),
     ],
     products: [
+        .library(name: "StackViewStatic", type: .static, targets: ["StackView"]),
         .library(name: "StackView", targets: ["StackView"]),
     ],
     dependencies: [
