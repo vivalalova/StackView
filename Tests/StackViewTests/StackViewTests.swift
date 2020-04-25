@@ -6,7 +6,7 @@ final class StackViewTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(StackView().text, "Hello, World!")
+        XCTAssertEqual(StackView().isAutoAxis, false)
     }
 
     static var allTests = [
